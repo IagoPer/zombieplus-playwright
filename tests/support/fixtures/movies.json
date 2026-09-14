@@ -1,0 +1,98 @@
+{
+  "guerra_mundial_z": {
+    "title": "Guerra Mundial Z",
+    "overview": "Um ex-investigador das Nações Unidas percorre o mundo em uma corrida contra o tempo para descobrir uma maneira de conter uma pandemia que transforma seres humanos em criaturas violentas.",
+    "featured": false,
+    "release_year": 2013,
+    "company_id": "Paramount Pictures",
+    "cover": "/images/covers/guerra-mundial-z.png"
+  },
+  "madrugada_dos_mortos": {
+    "title": "Madrugada dos Mortos",
+    "overview": "Após um surto misterioso transformar grande parte da população em zumbis, um grupo de sobreviventes se refugia em um shopping center enquanto tenta encontrar uma maneira de escapar.",
+    "featured": false,
+    "release_year": 2004,
+    "company_id": "Universal Pictures",
+    "cover": "/images/covers/madrugada-dos-mortos.png"
+  },
+  "todo_mundo_quase_morto": {
+    "title": "Todo Mundo Quase Morto",
+    "overview": "Shaun é um homem comum que precisa enfrentar um apocalipse zumbi enquanto tenta salvar seus amigos, sua mãe e sua namorada.",
+    "featured": false,
+    "release_year": 2004,
+    "company_id": "Universal Pictures",
+    "cover": "/images/covers/todo-mundo-quase-morto.png"
+  },
+  "exterminio": {
+    "title": "Extermínio",
+    "overview": "Um homem acorda em um hospital abandonado e descobre que um vírus altamente contagioso transformou grande parte da população em criaturas extremamente agressivas.",
+    "featured": false,
+    "release_year": 2002,
+    "company_id": "Sony Pictures",
+    "cover": "/images/covers/exterminio.png"
+  },
+  "exterminio_2": {
+    "title": "Extermínio 2",
+    "overview": "Seis meses após o surto do vírus, as autoridades tentam reconstruir Londres, mas uma nova ameaça surge quando o vírus reaparece.",
+    "featured": false,
+    "release_year": 2007,
+    "company_id": "Sony Pictures",
+    "cover": "/images/covers/exterminio-2.png"
+  },
+  "zumbilandia": {
+    "title": "Zumbilândia",
+    "overview": "Em um mundo devastado por zumbis, um jovem solitário segue uma série de regras para sobreviver até encontrar outros sobreviventes e formar uma improvável família.",
+    "featured": false,
+    "release_year": 2009,
+    "company_id": "Sony Pictures",
+    "cover": "/images/covers/zumbilandia.png"
+  },
+  "zumbilandia_atire_duas_vezes": {
+    "title": "Zumbilândia: Atire Duas Vezes",
+    "overview": "Os sobreviventes de Zumbilândia enfrentam novas ameaças e tipos mais perigosos de zumbis enquanto continuam sua jornada por um mundo pós-apocalíptico.",
+    "featured": false,
+    "release_year": 2019,
+    "company_id": "Sony Pictures",
+    "cover": "/images/covers/zumbilandia-atire-duas-vezes.png"
+  },
+  "madrugada_dos_mortos_vivos": {
+    "title": "Madrugada dos Mortos-Vivos",
+    "overview": "Um grupo de pessoas se refugia em um centro comercial enquanto uma epidemia transforma os mortos em zumbis e ameaça destruir a sociedade.",
+    "featured": false,
+    "release_year": 1978,
+    "company_id": "United Film Distribution Company",
+    "cover": "/images/covers/madrugada-dos-mortos-vivos.png"
+  },
+  "a_noite_dos_mortos_vivos": {
+    "title": "A Noite dos Mortos-Vivos",
+    "overview": "Um grupo de pessoas fica preso em uma casa isolada enquanto cadáveres reanimados começam a atacar os vivos.",
+    "featured": false,
+    "release_year": 1968,
+    "company_id": "Continental Distributing",
+    "cover": "/images/covers/a-noite-dos-mortos-vivos.png"
+  },
+  "meu_namorado_e_um_zumbi": {
+    "title": "Meu Namorado é um Zumbi",
+    "overview": "Após o apocalipse zumbi, um zumbi começa a recuperar suas emoções e cria uma ligação inesperada com uma jovem sobrevivente.",
+    "featured": false,
+    "release_year": 2013,
+    "company_id": "Lionsgate",
+    "cover": "/images/covers/meu-namorado-e-um-zumbi.png"
+  },
+  "train_to_busan": {
+    "title": "Train to Busan",
+    "overview": "Durante uma viagem de trem para Busan, passageiros precisam lutar pela sobrevivência quando um surto transforma pessoas em zumbis extremamente agressivos.",
+    "featured": false,
+    "release_year": 2016,
+    "company_id": "Next Entertainment World",
+    "cover": "/images/covers/train-to-busan.png"
+  },
+  "army_of_the_dead": {
+    "title": "Army of the Dead: Invasão em Las Vegas",
+    "overview": "Após Las Vegas ser isolada devido a um surto de zumbis, um grupo de mercenários entra na cidade para realizar um grande assalto antes que uma bomba destrua a região.",
+    "featured": false,
+    "release_year": 2021,
+    "company_id": "Netflix",
+    "cover": "/images/covers/army-of-the-dead.png"
+  }
+}
