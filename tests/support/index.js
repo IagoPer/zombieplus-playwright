@@ -9,12 +9,14 @@ const { MoviesPage } = require("../pages/MoviesPage.js");
 
 const test = base.extend({
   page: async ({ page }, use) => {
-    page.landing = new LandingPages(page);
-    page.login = new LoginPage(page);
-    page.toast = new Toast(page);
-    page.movies = new MoviesPage(page);
+    const context = page;
 
-    await use(page);
+    context["landing"] = new LandingPages(page);
+    context["login"] = new LoginPage(page);
+    context["toast"] = new Toast(page);
+    context["movies"] = new MoviesPage(page);
+
+    await use(context);
   },
 });
 

@@ -1,21 +1,25 @@
-const { test } = require('../support/index.js');
+const { test } = require("../support/index.js");
 
-const data = require('../support/fixtures/movies.json');
+const data = require("../support/fixtures/movies.json");
 
-const {executeSQL} = require('../support/database');
-
+const { executeSQL } = require("../support/database");
 
 test("deve poder cadastrar um novo filme", async ({ page }) => {
-  
-  const movie = data.army_of_the_dead
+  //Os comandos abaixo estão usando apenas a camanda do PageObject (index.js)
+  const movie = data.army_of_the_dead;
 
-  await executeSQL(`delete from movies where title = '${movie.title}';`)
-  
+  await executeSQL(`delete from movies where title = '${movie.title}';`);
+
   await page.login.visit();
-  await page.login.submit('admin@zombieplus.com', 'pwd123');
+  await page.login.submit("admin@zombieplus.com", "pwd123");
   await page.movies.isLoggedIn();
 
-  await page.movies.create(movie.title, movie.overview, movie.company_id, movie.release_year);
+  await page.movies.create(
+    movie.title,
+    movie.overview,
+    movie.company_id,
+    movie.release_year,
+  );
 
-  await page.toast.containText('Cadastro realizado com sucesso!');
+  await page.toast.containText("Cadastro realizado com sucesso!");
 });
