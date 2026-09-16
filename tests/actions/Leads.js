@@ -1,7 +1,7 @@
 // IMPORTANTE: Importe o expect para poder usá-lo dentro da classe
 import { expect } from "@playwright/test";
 
-export class LandingPages {
+export class Leads {
   constructor(page) {
     this.page = page; // Salva o page do Playwright no escopo da classe
   }

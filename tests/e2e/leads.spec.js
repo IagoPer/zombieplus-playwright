@@ -24,13 +24,13 @@ test("deve cadastrar um lead na fila de espera", async ({ page }) => {
   const leadEmail = faker.internet.email()
 
   // visit
-  await page.landing.visit();
+  await page.leads.visit();
 
   // open LeadModal
-  await page.landing.openLeadModal();
+  await page.leads.openLeadModal();
 
   // submit LeadForm
-  await page.landing.submitLeadForm(leadName, leadEmail);
+  await page.leads.submitLeadForm(leadName, leadEmail);
 
   // toastHaveText
   const message =
@@ -55,13 +55,13 @@ test("Não deve cadastrar quando email já existe", async ({ page, request }) =>
   expect(newLead.ok()).toBeTruthy()
 
   // visit
-  await page.landing.visit();
+  await page.leads.visit();
 
   // open LeadModal
-  await page.landing.openLeadModal();
+  await page.leads.openLeadModal();
 
   // submit LeadForm
-  await page.landing.submitLeadForm(leadName, leadEmail);
+  await page.leads.submitLeadForm(leadName, leadEmail);
 
   // toastHaveText
   const message =
@@ -70,51 +70,51 @@ test("Não deve cadastrar quando email já existe", async ({ page, request }) =>
 });
 
 test("E-mail incorreto", async ({ page }) => {
-  await page.landing.visit();
+  await page.leads.visit();
 
   // open LeadModal
-  await page.landing.openLeadModal();
+  await page.leads.openLeadModal();
 
   // submit LeadForm
-  await page.landing.submitLeadForm("Iago Pereira", "iago.gmail.com");
+  await page.leads.submitLeadForm("Iago Pereira", "iago.gmail.com");
 
-  await page.landing.alertHaveText("Email incorreto");
+  await page.leads.alertHaveText("Email incorreto");
 });
 
 test("Nome obrigatório", async ({ page }) => {
-  await page.landing.visit();
+  await page.leads.visit();
 
   // open LeadModal
-  await page.landing.openLeadModal();
+  await page.leads.openLeadModal();
 
   // submit LeadForm
-  await page.landing.submitLeadForm("", "iago@gmail.com");
+  await page.leads.submitLeadForm("", "iago@gmail.com");
 
-  await page.landing.alertHaveText("Campo obrigatório");
+  await page.leads.alertHaveText("Campo obrigatório");
 });
 
 test("Campo nome e email sem preenchimento", async ({ page }) => {
-  await page.landing.visit();
+  await page.leads.visit();
 
   // open LeadModal
-  await page.landing.openLeadModal();
+  await page.leads.openLeadModal();
 
   // submit LeadForm
-  await page.landing.submitLeadForm("", "");
+  await page.leads.submitLeadForm("", "");
 
-  await page.landing.alertHaveText(["Campo obrigatório", "Campo obrigatório"]);
+  await page.leads.alertHaveText(["Campo obrigatório", "Campo obrigatório"]);
 });
 
 test("Email obrigatório", async ({ page }) => {
-  await page.landing.visit();
+  await page.leads.visit();
 
   // open LeadModal
-  await page.landing.openLeadModal();
+  await page.leads.openLeadModal();
 
   // submit LeadForm
-  await page.landing.submitLeadForm("Iago Pereira", "");
+  await page.leads.submitLeadForm("Iago Pereira", "");
 
-  await page.landing.alertHaveText("Campo obrigatório");
+  await page.leads.alertHaveText("Campo obrigatório");
 });
 
 

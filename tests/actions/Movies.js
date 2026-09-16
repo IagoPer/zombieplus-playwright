@@ -1,24 +1,24 @@
 const { expect } = require("@playwright/test");
 
-const { Toast } = require("../pages/Components");
+const { Toast } = require("./Components");
 
-
-
-export class MoviesPage {
+export class Movies {
   constructor(page) {
     this.page = page;
   }
 
-  async isLoggedIn() {
-    //const logoutLink = this.page.locator('a[href="/logout"]')
-    //await expect(logoutLink).toBeVisible()
-    //await expect(this.page).toHaveURL('http://localhost:3000/admin/movies')
-    await this.page.waitForLoadState("networkidle");
-    await expect(this.page).toHaveURL(/.*admin/);
+  // Ação para realizar o clique no botão de formulário para cadastro de filme
+  async goForm() {
+    await this.page.locator('a[href$="register"]').click();
+  }
+
+  // Ação para realizar o clique no botão de cadastro do filme
+  async submit() {
+    await this.page.getByRole("button", { name: "Cadastrar" }).click();
   }
 
   async create(title, overview, company_id, release_year) {
-    await this.page.locator('a[href$="register"]').click();
+    await this.goForm();
     await this.page.locator("#title").fill(title);
     await this.page.getByLabel("Sinopse").fill(overview);
 
@@ -40,6 +40,10 @@ export class MoviesPage {
       .filter({ hasText: release_year })
       .click();
 
-    await this.page.getByRole("button", { name: "Cadastrar" }).click();
+    await this.submit();
+  }
+
+  async alertHaveText(targetMessage) {
+    await expect(this.page.locator(".alert")).toHaveText(targetMessage);
   }
 }
